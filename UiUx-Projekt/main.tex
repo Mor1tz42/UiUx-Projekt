@@ -1,0 +1,108 @@
+\documentclass[12pt, a4paper]{scrreprt}
+\usepackage{csquotes}
+\usepackage{graphicx} 
+\graphicspath{ {figures/} }
+\usepackage[hidelinks]{hyperref} 
+\usepackage{acronym}
+
+
+\usepackage{array}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{float}
+\usepackage{biblatex}
+\addbibresource{references.bib}
+
+
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+
+
+
+
+
+
+\begin{document}
+\pagenumbering{roman}
+\setlength{\parskip}{1em}
+\begin{titlepage}
+    \begin{center}
+    	\includegraphics[width=\textwidth]{Bilder/logo_oth_Regensburg.png}
+    \end{center}
+    \vspace*{\baselineskip}
+    \begin{center}
+        {Ostbayerische Technische Hochschule Regensburg \\
+    	Fakultät Informatik und Mathematik} \\
+    	\vspace{2cm}
+    	\Large \textbf{Projekt Foodback} \\
+        \small \textbf{Eine innovative Mensabewertungsapp} \\
+        \normalsize
+        \vspace{2cm}
+         Autoren: Jakob Frohwein, Moritz Knarr   \\
+        \vspace{2cm}
+        \vspace{0.5cm}
+        User Experience Design - IN - SoSe25 \\
+        \end{center}
+     \vspace{7cm}
+    \parbox{4cm}{%
+    \rule{4cm}{1pt}\\
+    \centerline{Ort, Datum}%
+    }\hfill
+       \parbox{5cm}{%
+       \rule{5cm}{1pt}\\
+    \centerline{Unterschrift}%
+    }
+\end{titlepage}
+
+
+
+\tableofcontents
+\pagenumbering{arabic}
+
+
+
+\input{Text/Einführung}
+\input{Text/FazitundReflektion}
+\input{Text/Abkürzungsverzeichnis}
+
+
+
+
+
+\cleardoublepage
+% \phantomsection
+\addcontentsline{toc}{chapter}{\listfigurename}
+\listoffigures
+
+
+\printbibliography[heading=bibintoc,title={Quellenverzeichnis}]
+\printbibliography[heading=subbibintoc,type=article,title={Articles only}]
+
+
+
+
+\end{document}
+
