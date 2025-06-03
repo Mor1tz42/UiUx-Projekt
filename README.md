@@ -1,40 +1,40 @@
-##Arbeitsflow
+## Arbeitsflow
 
-## Dwn
+### Dwn
 Lade das gesamte Projekt lokal herunter
 ```bash
 git clone https://github.com/dein-nutzername/dein-repo.git
 ```
-##Branch Change
+### Branch Change
 Eigene Branch auswählen bzw. erstellen
 ```bash
 git checkout <branch-name>
 ```
 
-##Changes
+### Changes
 Bearbeite die Dateien (z. B. LaTeX) mit deinem bevorzugten Editor
 Speichere deine Änderungen
 
-##Add
+### Add
 Änderungen zum Commit vormerken
 ```bash
 git add .
 ```
 
-##Commit
+### Commit
 Änderungen commiten
 ```bash
 git commit -m "Kurze Beschreibung der Änderungen"
 ```
 
-##Push
+### Push
 Änderungen zum Remote-Repository pushen
 ```bash
 git push origin <branch-name>
 ```
 
 
-##Pull
+### Pull
 Während dem Arbeiten regelmäßig die neuesten Änderungen pullen
 ```bash
 git pull
