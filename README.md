@@ -3,7 +3,7 @@
 ### Dwn
 Lade das gesamte Projekt lokal herunter
 ```bash
-git clone https://github.com/dein-nutzername/dein-repo.git
+git clone https://github.com/https://github.com/Mor1tz42/UiUx-Projekt.git
 ```
 ### Branch Change
 Eigene Branch auswählen bzw. erstellen
